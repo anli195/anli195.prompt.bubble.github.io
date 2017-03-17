@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery鼠标经过冒泡对话框特效</title>
+<link rel="stylesheet" href="css/bubble.css">
+
+</head>
+
+<body>
+
+
+<div id='mainContainer' class='container'>
+	<img src='images/about2.jpg' id="thoughtBubble" alt='whats up?' />
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src='js/bubble.js'></script>
+<script type="text/javascript">
+$(window).ready( function() {
+	$('#thoughtBubble').thoughtBubble({
+		text: '亲爱的，我美不。',
+		font: 'avenir'
+	});
+});
+</script>
+
+</body>
+</html>
